@@ -24,6 +24,7 @@ public class LoginInteractorTest {
         User user = factory.create("Paul", "password");
         userRepository.save(user);
 
+
         // This creates a successPresenter that tests whether the test case is as we expect.
         LoginOutputBoundary successPresenter = new LoginOutputBoundary() {
             @Override
