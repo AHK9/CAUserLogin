@@ -63,7 +63,6 @@ public class LoginInteractorTest {
                 fail("Use case failure is unexpected.");
             }
         };
-
         LoginInputBoundary interactor = new LoginInteractor(userRepository, successPresenter);
         assertNull(userRepository.getCurrentUser());
         interactor.execute(inputData);
